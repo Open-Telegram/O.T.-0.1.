@@ -21,7 +21,7 @@ class usersModel extends ApiModel
 		if(!empty($users))
 		{
 			return $users;
-		}else{return false;}
+		}else{return [];}
 	}
 	public function setNewUser($name,$login,$pass,$role)
 	{

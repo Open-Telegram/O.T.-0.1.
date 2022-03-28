@@ -21,17 +21,19 @@ if(isset($_GET['id']) and $_GET['id']== $Telegram_api['Telegram_api'])
 
 }else
 {
-	
-	header('Location: https://'.$_SERVER['HTTP_HOST'].'/bot/admin', true, 301);
+	echo 1234;
+//	header('Location: https://'.$_SERVER['HTTP_HOST'].'/bot/admin', true, 301);
 
 
-	$botAPI = '1921363334:AAEV4BZnxGaONHNYYWi6izCa7DV-B7xXH4Y';//Удалить эту строку после подключения бота.
+//    $Telegram_api = include($_SERVER['DOCUMENT_ROOT'] . '/bot/admin/system/config.php');
+	$botAPI = '1921363334:AAGjr5eLI_FM5E9TTt36V1lGuuSIhEBmrjg';
+//	$botAPI = '1921363334:AAEV4BZnxGaONHNYYWi6izCa7DV-B7xXH4Y';//Удалить эту строку после подключения бота.
 	// $url = "https://trahbot.vlad-egorov.ru/?id=$botAPI";//И эту
 	// echo file_get_contents("https://api.telegram.org/bot$botAPI/setWebhook?url=$url"); //Замены переменных обновить страницу в браузере
 	// если в браузер вываелась строка {"ok":true,"result":true,"description":"Webhook was set"} - значит бот успешно подключён и можно прступать ко 2-ой части установки.
 
 
-	echo file_get_contents("https://api.telegram.org/bot$botAPI/getWebhookInfo"); //Для удаления прошлого адресса | deleteWebhook | getWebhookInfo
+	echo file_get_contents("https://api.telegram.org/bot1921363334:AAGjr5eLI_FM5E9TTt36V1lGuuSIhEBmrjg/getWebhookInfo"); //Для удаления прошлого адресса | deleteWebhook | getWebhookInfo
 }
 
 
