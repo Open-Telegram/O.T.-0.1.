@@ -10,3 +10,6 @@ spl_autoload_register(function ($class) {
     }
 });
 new \system\MainController();
+
+
+$_SESSION['errors'] = [];

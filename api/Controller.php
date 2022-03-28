@@ -34,7 +34,7 @@ class Controller
 
     public function create_error($text, $type)
     {
-        $_SESSION['error'][] = [
+        $_SESSION['errors'][] = [
             'text' => $text,
             'type' => $type
         ];

@@ -1,3 +1,15 @@
 nav {
     margin-bottom: 15px;
 }
+nav .logo img{
+    height: 55px;
+}
+
+nav .nav-item a.active{
+    margin-top: -5px;
+    font-size: 25px;
+}
+
+nav .nav-item a{
+    font-size: 20px;
+}

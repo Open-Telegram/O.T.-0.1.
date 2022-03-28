@@ -2,9 +2,13 @@
     {block name=error}
     {foreach $smarty.session.errors as $error}
         {if $error['type'] == 'error'}
-            error - {$error['text']}
+            <div class="alert alert-danger text-center" role="alert">
+                {$error['text']}
+            </div>
         {elseif $error['type'] == 'notify'}
-            notify - {$error['text']}
+            <div class="alert alert-warning  text-center" role="alert">
+                {$error['text']}
+            </div>
         {/if}
     {/foreach}
     {/block}
