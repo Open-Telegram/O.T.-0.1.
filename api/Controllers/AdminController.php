@@ -11,9 +11,7 @@ class AdminController extends Controller
 
     public function index()
     {
-        if (!isset($_SESSION['admin'])) {
-            $this->redirect('Login');
-        }
+        $this->is_login();
 
         $HomeModel = $this->loader->loadModel('Home');
         $data['posts'] = $HomeModel->getAll();

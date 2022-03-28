@@ -11,7 +11,7 @@ class RouteController
 
         if (file_exists($filename)) {
             include_once($filename);
-            $instance = new $className;
+            $instance = new $className();
             $instance->$methode();
         }else{
             die('Контроллер '.$filename . ' Не найден');

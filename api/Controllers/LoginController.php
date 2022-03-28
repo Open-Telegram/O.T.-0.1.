@@ -10,7 +10,6 @@ class LoginController extends Controller
     {
         if(isset($_SESSION['admin']))$this->redirect('Admin');
 
-        $data = [];
         if (isset($this->protection->post)
             && isset($this->protection->post['login'])
             && isset($this->protection->post['password'])) {
@@ -22,10 +21,10 @@ class LoginController extends Controller
                 $_SESSION['admin']['name'] = $logging[0]['name'];
                 $this->redirect('Admin');
             }else{
-                $data['error'] = 'Не верный логин или пароль';
+                $this->create_error('Не верный логин или пароль','error');
             }
         }
-        $this->render->render('Login',$data);
+        $this->smarty->display('Login.tpl');
     }
 
     public function logout(){
