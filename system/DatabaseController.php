@@ -6,9 +6,9 @@ class DatabaseController
 {
     private $config = [
         'host' => 'localhost',
-        'user' => 'cfe',
-        'pass' => 'efwkF6sZ5tjNSCwm',
-        'name' => 'cfe',
+        'user' => 'ot2',
+        'pass' => 'jD6rWkMXRCBsHp2j',
+        'name' => 'ot2',
     ];
     private $db;
 

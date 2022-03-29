@@ -9,7 +9,7 @@
     {block name=head}{/block}
 </head>
 
-<body>
+<body  class="d-flex flex-column min-vh-100">
 {block name=header}{/block}
 <div class="container">
     {block name=error}{/block}

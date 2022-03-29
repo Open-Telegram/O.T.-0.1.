@@ -13,7 +13,7 @@ class MainController
         session_start();
         $this->protection = new ProtectionController();
 
-        $class = 'Home';
+        $class = 'Admin';
         $methode = 'index';
 
         if (isset($this->protection->get['Class']) && !empty($this->protection->get['Class'])) {
